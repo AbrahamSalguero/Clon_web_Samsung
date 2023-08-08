@@ -1,0 +1,545 @@
+@charset "utf-8";
+/* CSS Document */
+* { 
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-o-box-sizing: border-box;
+-ms-box-sizing: border-box;
+-moz-box-sizing: border-box;
+}
+body {
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size:16px; 
+color:black;
+padding:0;
+margin:auto;
+max-width: 1500px;
+}
+nav, header, main, section, article, aside, footer {
+padding:0;
+margin:0;
+display: block;
+}
+html {
+scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: galaxyFont;
+    src: url(../fonts/SamsungOne-400.ttf);
+  }
+
+/*------------------------------------------------------------------*/
+.divNav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+/*-----------------------------------------------------------------*/
+.lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .lista>ul{
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      
+  }
+  .lista>ul>li>a{
+  text-decoration: none;
+  padding: 5px;
+  }
+  .lista>ul>li>a:hover{
+      background-color: black;
+      color: white;
+      border-radius: 25px;
+  }
+.iconos a img:hover{
+    opacity: 0.5;
+}
+
+.logo{
+    width: 250px;
+    padding: 10px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+/*---------------------------------------------------------------*/
+
+.listaNiveles{
+           width: 50px;
+            position: relative;
+            display: none;
+          
+            }
+.listaNiveles > a {
+    padding: 3px 3px;
+    display: block;  
+    color: white; 
+    text-decoration: none;
+}
+
+.listaNiveles > a:hover {
+    background-color: rgba(128, 128, 128, 0.308);
+    }
+
+.desplegable {
+    background-color: #f9f9f9;
+    display:none ; 
+    position: absolute; 
+    min-width: 150px; 
+    z-index: 1;
+}
+.listaNiveles:hover .desplegable {
+    display: block;
+} 
+
+.desplegable ul {
+        list-style-type: none;
+        padding: 0; 
+        margin: 0; 
+        background-color: #f9f9f9; 
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+        display: flex;
+        flex-direction: column;
+    }
+
+.desplegable ul li {
+    width: 150px; 
+    position: relative;
+}
+
+.desplegable ul li a {
+    color: black; 
+    text-decoration: none; 
+    display: block; 
+    padding: 12px 16px;
+}
+.desplegable ul li a:hover {
+    background-color: #f1f1f1;
+}
+
+.desplegable ul li ul {
+    display: none;
+}
+/*.desplegable hr{
+   display: none;
+}*/
+
+.desplegable li:hover ul {
+    display: block;
+    position: absolute; 
+    left: 150px; 
+    top: 0;
+}
+/*--------------------------------------------------------------*/
+
+.contenedorNegro{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+.tituloGalaxy{
+    margin:0px 0px 15px 15px;
+}
+.tituloGalaxy h1{
+    color:white;
+    margin:5px;
+}
+
+
+.menuGalaxy{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.menuGalaxy ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.menuGalaxy ul li a{
+    text-decoration: none;
+    margin: 12px;
+    color: white;
+}
+.menuGalaxy .active{
+    background-color: blue;
+    color: white;
+    padding: 15px;
+}
+.menuGalaxy ul li a:hover{
+    border-bottom:4px solid blue;
+}
+
+/*----------------------------------------------------------------*/
+.subMenuGalaxy{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: black;
+}
+
+.subMenuGalaxy ul{
+    display: flex;
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+}
+.subMenuGalaxy ul li a{
+    text-decoration: none;
+    margin: 12px;
+    color: white;  
+}
+.subMenuGalaxy ul li a:hover{
+    border-bottom:4px solid blue;
+}
+/*---------------------------------------------------------------*/
+.bannerGalaxy{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: center;
+}
+.imagen{
+    width: 50%;
+    
+}
+.imagen img{
+    width: 100%;
+}
+.texto{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   align-self: center;
+   color: white;
+}
+.texto h2{
+ font-family: galaxyFont;
+ font-size: 50px;
+}
+.enlaces a{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-family: galaxyFont;
+    font-weight: bold;
+}
+.enlaces .info:hover{
+     text-decoration-line: underline;
+    
+}
+.boton{
+    border: 2px solid white;
+    border-radius: 50px; 
+}
+.enlaces .boton:hover{
+   color: black;
+   background-color: white;
+}
+/*-------------------------------------------------------------*/
+.titulo{
+    text-align: center;
+    font-family: galaxyFont;
+    font-weight: bold;
+    font-size: 25px;
+}
+.contenedorExplora{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.explora{
+    width: 33.33%;
+    margin: 15px;
+}
+.explora img{
+    width: 100%;
+}
+.explora p{
+    text-align: center;
+}
+.explora p a{
+    text-decoration: none;
+    font-family: galaxyFont;
+    font-size: 16px;
+    color: black;
+}
+.explora p a:hover{
+    border-bottom: 3px solid blue;
+}
+/*----------------------------------------------------------------*/
+.SeleccionTitulos{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+   justify-content: center;
+}
+.SeleccionTitulos h2 a{
+    margin: 10px;
+    color:gray;
+    text-decoration:none;
+}
+.SeleccionTitulos .active{
+color: black;
+border-bottom: 3px solid blue;
+padding: 10px;
+}
+.SeleccionTitulos h2 a:hover{
+    color: black;
+}
+/*----------------------------------------------------------------*/
+.contenedorColumnas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.columna1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.columna1 img{
+    width: 100%;
+
+}
+.columna1 div{
+    width: 100%;
+    margin: 15px;
+}
+.columna1 p{
+    text-align: center;
+    font-family: galaxyFont;
+}
+.columna1 a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: galaxyFont;
+    font-weight: bold;
+    color: black;
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 170px;
+    padding: 5px;
+    margin: auto;
+}
+
+.columna1 a:hover{
+    color: white;
+    background-color: black;
+}
+
+
+
+.columna2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.columna2 img{
+    width: 100%;
+
+}
+.columna2 div{
+    margin: 15px;
+}
+.columna2 p{
+    text-align: center;
+    font-family: galaxyFont;
+}
+.columna2 p{
+    text-align: center;
+    font-family: galaxyFont;
+}
+.columna2 a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: galaxyFont;
+    font-weight: bold;
+    color: black;
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 170px;
+    padding: 5px;
+    margin: auto;
+}
+
+.columna2 a:hover{
+    color: white;
+    background-color: black;
+}
+
+
+
+.columna3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+.columna3 img{
+    width: 100%;
+
+}
+.columna3 div{
+    width: 100%;
+    margin: 15px;
+}
+.columna3 p{
+    text-align: center;
+    font-family: galaxyFont;
+}
+.columna3 a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: galaxyFont;
+    color: black;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 170px;
+    padding: 5px;
+    margin: auto;
+}
+.columna3 a:hover{
+    color: white;
+    background-color: black;
+}
+
+/*-----------------------------------------------------------------*/
+
+.cuadroGris{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-color:darkslategray;
+   width:100%;
+    
+}
+.politica{
+    display: flex;
+    justify-content: center;
+}
+.politica ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+.politica a{
+    color: white;
+    text-decoration: none;
+}
+.politica li{
+    margin: 15px;
+}
+
+.politica a:hover{
+    text-decoration: underline;
+   /*opacity: 0.5;*/
+}
+/*---------------------------------------------------------------*/
+.redes{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.redes ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 20px;
+}
+.redes a{
+    padding: 10px;
+}
+
+.redes>a>img{
+    height: 50px;
+    margin: 15px 0px;
+    padding-left: 5px;
+}
+.redes img:hover{
+    opacity: 0.5;
+}
+
+/*-------------------------------------------------------------*/
+.buttonUp{
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    z-index: 1;
+}
+.buttonUp:hover{
+    opacity: 0.8;
+}
+
+/*-----------------------------------------------------------------*/
+@media screen  and (max-width:1200px){
+    .lista{
+        display: none;
+    }
+    .listaNiveles{
+        display: block;
+    }
+    .contenedorNegro{flex-direction: column;}
+    .active{white-space: nowrap;}
+    .menuGalaxy{justify-content: center;margin-bottom: 20px;}
+    .menuGalaxy ul li a{margin: 5px;}
+    .subMenuGalaxy{justify-content: center;}
+    .subMenuGalaxy ul li a{
+        margin: 5px;} 
+    .imagen{width: 100%;}    
+    .enlaces{padding-bottom: 30px;}
+    .explora{width: 100%;}
+    .contenedorColumnas{flex-direction: column;flex-wrap: wrap;}
+    .politica ul{flex-direction: column; margin: auto;text-align: center;}
+    .politica li{margin-bottom: 10px;}
+    .politica a:hover{border-bottom:none;opacity: 0.5;}
+    .redes{margin-left: 70px;}
+    .contenedorExplora{flex-direction: column;}
+    .columna1{
+        flex-direction: row;
+        width: 100%;
+    }
+    .columna2{
+        flex-direction: row;
+        width: 100%;
+    }
+    .columna3{
+        flex-direction: row;
+        width: 100%;
+    }
+   
+    
+    
+
+    
+}
